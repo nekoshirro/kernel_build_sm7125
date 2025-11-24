@@ -33,7 +33,7 @@ jobs:
         with:
           kernel-url: https://github.com/frstprjkt/valeryn_samsung_sm7125
           kernel-branch: ${{ github.event.inputs.kernel-branch }}
-          config: vendor/lineage-${{ github.event.inputs.device-codename }}_defconfig
+          config: vendor/samsung/sm7125_defconfig vendor/samsung/${{ github.event.inputs.device-codename }}.config
           arch: arm64
           ksu: true
           ksu-skip-patch: true
