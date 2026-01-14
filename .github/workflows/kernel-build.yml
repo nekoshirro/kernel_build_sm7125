@@ -37,7 +37,7 @@ jobs:
           arch: arm64
           aosp-gcc: true
           aosp-clang: true
-          aosp-clang-version: r563880
+          aosp-clang-version: clang-r547379
           anykernel3: true
           anykernel3-url: https://github.com/frstprjkt/AnyKernel3
           anykernel3-branch: ${{ github.event.inputs.device-codename }}
