@@ -31,8 +31,8 @@ jobs:
       - name: Build
         uses: frstprjkt/kernel_build_action@main
         with:
-          kernel-url: https://github.com/frstprjkt/valeryn_samsung_sm7125
-          kernel-branch: ${{ github.event.inputs.kernel-branch }}
+          kernel-url: https://github.com/nekoshirro/valeryn_samsung_sm7125
+          kernel-branch: android16
           config: vendor/samsung/sm7125_defconfig vendor/samsung/${{ github.event.inputs.device-codename }}.config
           arch: arm64
           aosp-gcc: true
@@ -41,5 +41,5 @@ jobs:
           anykernel3: true
           anykernel3-url: https://github.com/frstprjkt/AnyKernel3
           anykernel3-branch: ${{ github.event.inputs.device-codename }}
-          extra-cmd: LLVM=1 LLVM_IAS=1 KBUILD_BUILD_USER=valeryn
-          custom-package-name: valeryn_$(date +%d%H%M)_${{ github.event.inputs.device-codename }}-${{ github.event.inputs.release-type }}
+          extra-cmd: LLVM=1 LLVM_IAS=1 KBUILD_BUILD_USER=hafidz
+          custom-package-name: openela_$(date +%d%H%M)_${{ github.event.inputs.device-codename }}-${{ github.event.inputs.release-type }}
